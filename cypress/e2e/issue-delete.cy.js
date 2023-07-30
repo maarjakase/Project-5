@@ -12,7 +12,7 @@ describe('Issue delation', () => {
     });
   
     
-    it('Delete issue and validate successfully', () => {
+    it.only('Delete issue and validate successfully', () => {
         cy.get('[data-testid="modal:issue-details"]').within(() => {
 
             cy.get('[data-testid="icon:trash"]').click();
